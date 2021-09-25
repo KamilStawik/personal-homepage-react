@@ -1,5 +1,5 @@
-import { Wrapper, Photo, TopSpan, Header, IntroductionSpan, InfoContainer } from "./styled"
-import DarkModeToggler from "./DarkModeToggler"
+import { Wrapper, Photo, TopSpan, Header, IntroductionSpan, InfoContainer } from "./styled";
+import DarkModeToggler from "./DarkModeToggler";
 import HireMeButton from "./HireMeButton";
 
 const PersonalInfo = () => (
@@ -17,4 +17,4 @@ const PersonalInfo = () => (
     </Wrapper>
 );
 
-export default PersonalInfo
+export default PersonalInfo;

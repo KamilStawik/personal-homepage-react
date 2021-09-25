@@ -1,11 +1,13 @@
 // import logo from './logo.svg';
 import PersonalInfo from './features/PersonalInfo';
 import './App.css';
+import SkillSet from './features/SkillSet';
 
 function App() {
   return (
     <>
       <PersonalInfo />
+      <SkillSet />
       {/* <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
