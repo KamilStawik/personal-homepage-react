@@ -14,10 +14,14 @@ export const StyledButton = styled.button`
     display: flex;
 
     &:hover {
-        box-shadow: 2px -2px 0px #8CC2FF,
-        -2px 2px 0px #8CC2FF,
-        2px 2px 0px #8CC2FF,
-        -2px -2px 0px #8CC2FF;
+        box-shadow: 2px -2px 0px ${({ theme }) => (theme.colors.anakiwa)},
+        -2px 2px 0px ${({ theme }) => (theme.colors.anakiwa)},
+        2px 2px 0px ${({ theme }) => (theme.colors.anakiwa)},
+        -2px -2px 0px ${({ theme }) => (theme.colors.anakiwa)};
+    }
+
+    &:active {
+        box-shadow: inset 0px 2px 0px ${({ theme }) => (theme.colors.parsley)};
     }
 `;
 

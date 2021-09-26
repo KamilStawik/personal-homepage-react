@@ -8,6 +8,8 @@ export const theme = {
 
         scienceBlue: "#0366D6",
         anakiwa: "#8CC2FF",
+
+        parsley: "#144620",
     },
 
     breakPoints: {
