@@ -21,5 +21,13 @@ export const UnorderedList = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => (theme.colors.scienceBlue)};
+  margin: 4px 0px;
   flex-basis: 33%;
+`;
+
+export const ListItemText = styled.span`
+  color: ${({ theme }) => (theme.colors.slateGray)};
 `;
