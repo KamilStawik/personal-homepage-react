@@ -2,8 +2,6 @@ import styled from "styled-components";
 import kamilStawik from "../../images/kamilStawik.jpg"
 
 export const Wrapper = styled.div`
-  max-width: 1216px;
-  margin: 66px auto;
   display: flex;
 `;
 
