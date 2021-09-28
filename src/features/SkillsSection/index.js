@@ -1,12 +1,10 @@
 import { ListItem, ListItemText, SectionHeader, UnorderedList, Wrapper } from "./styled";
-import skillSetContent from "./skillSetContent";
 
-
-const SkillSet = () => (
+const SkillSet = ({ title, content }) => (
   <Wrapper>
-    <SectionHeader>My skillset includes 🛠️</SectionHeader>
+    <SectionHeader>{title}</SectionHeader>
     <UnorderedList>
-      {skillSetContent.map(skill => (
+      {content.map(skill => (
         <ListItem key={skill.id}><ListItemText>{skill.content}</ListItemText></ListItem>
       ))}
     </UnorderedList>
