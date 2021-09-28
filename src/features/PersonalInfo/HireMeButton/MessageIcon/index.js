@@ -1,4 +1,4 @@
-import { ReactComponent as Message } from "../../../../iconly/Message.svg";
+import { ReactComponent as Message } from "../../../../iconly/message.svg";
 
 const MessageIcon = () => (
     <Message />
