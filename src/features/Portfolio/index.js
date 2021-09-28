@@ -1,8 +1,11 @@
-//import { StyledButton, ButtonText } from "./styled";
 import { GitHubIcon } from "./GitHubIcon/index.js";
+import SectionHeader from "../../common/SectionHeader/index.js";
 
 const Portfolio = () => (
-    <GitHubIcon />
+    <>
+        <GitHubIcon />
+        <SectionHeader title={"Portfolio"} portfolio />
+    </>
 );
 
 export default Portfolio;

@@ -8,14 +8,6 @@ export const Wrapper = styled.section`
   border-radius: 4px;
 `;
 
-export const SectionHeader = styled.h2`
-  font-weight: 900;
-  font-size: 30px;
-  margin: 0px 0px 48px 0px;
-  letter-spacing: 0.05em;
-  color: ${({ theme }) => (theme.colors.mineShaft)};
-`;
-
 export const UnorderedList = styled.ul`
   padding-left: 20px;
   display: flex;
