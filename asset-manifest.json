@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/personal-homepage-react/static/css/main.aea3adeb.chunk.css",
+    "main.js": "/personal-homepage-react/static/js/main.3ce15e59.chunk.js",
+    "main.js.map": "/personal-homepage-react/static/js/main.3ce15e59.chunk.js.map",
+    "runtime-main.js": "/personal-homepage-react/static/js/runtime-main.077b481c.js",
+    "runtime-main.js.map": "/personal-homepage-react/static/js/runtime-main.077b481c.js.map",
+    "static/js/2.c56436c5.chunk.js": "/personal-homepage-react/static/js/2.c56436c5.chunk.js",
+    "static/js/2.c56436c5.chunk.js.map": "/personal-homepage-react/static/js/2.c56436c5.chunk.js.map",
+    "static/js/3.62341f06.chunk.js": "/personal-homepage-react/static/js/3.62341f06.chunk.js",
+    "static/js/3.62341f06.chunk.js.map": "/personal-homepage-react/static/js/3.62341f06.chunk.js.map",
+    "index.html": "/personal-homepage-react/index.html",
+    "static/css/main.aea3adeb.chunk.css.map": "/personal-homepage-react/static/css/main.aea3adeb.chunk.css.map",
+    "static/js/2.c56436c5.chunk.js.LICENSE.txt": "/personal-homepage-react/static/js/2.c56436c5.chunk.js.LICENSE.txt",
+    "static/media/Message.cad96cea.svg": "/personal-homepage-react/static/media/Message.cad96cea.svg",
+    "static/media/darkModeOff.dd823077.svg": "/personal-homepage-react/static/media/darkModeOff.dd823077.svg",
+    "static/media/kamilStawik.098d43c6.jpg": "/personal-homepage-react/static/media/kamilStawik.098d43c6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.077b481c.js",
+    "static/js/2.c56436c5.chunk.js",
+    "static/css/main.aea3adeb.chunk.css",
+    "static/js/main.3ce15e59.chunk.js"
+  ]
+}
