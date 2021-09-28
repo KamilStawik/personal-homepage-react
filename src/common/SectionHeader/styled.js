@@ -9,5 +9,7 @@ export const StyledHeader = styled.h2`
 
     ${({ portfolio }) => portfolio && css`
         text-align: center;
+        margin-top: 12px;
+        margin-bottom: 8px;
     `}
 `;
