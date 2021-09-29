@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import Container from './common/Container';
-import PersonalInfo from './features/PersonalInfo';
-import SkillsSection from './features/SkillsSection';
+import PersonalInfo from './features/homepage/PersonalInfo';
+import SkillsSection from './features/homepage/SkillsSection';
 import skillSetContent from './skillSetContent';
-import futureSkillsContent from './futureSkillsContent'
-import Portfolio from './features/Portfolio';
+import futureSkillsContent from './futureSkillsContent';
+import Portfolio from './features/homepage/Portfolio';
 
 function App() {
   return (

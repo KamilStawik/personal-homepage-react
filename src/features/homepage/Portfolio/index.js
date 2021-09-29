@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { GitHubIcon } from "./GitHubIcon/index.js";
-import SectionHeader from "../../common/SectionHeader/index.js";
+import SectionHeader from "../../../common/SectionHeader/index.js";
 import Tile from './Tile/index.js';
 import { Subtitle, TilesWrapper } from "./styled.js";
 

@@ -1,5 +1,5 @@
 import { ListItem, ListItemText, UnorderedList, Wrapper } from "./styled";
-import SectionHeader from "../../common/SectionHeader";
+import SectionHeader from "../../../common/SectionHeader";
 
 const SkillSet = ({ title, content }) => (
 
