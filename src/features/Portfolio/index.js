@@ -5,21 +5,7 @@ import { Subtitle } from "./styled.js";
 
 const Portfolio = () => {
 
-    const initialData = [
-        {
-            id: 1,
-            name: "test1",
-            html_url: "test1",
-        },
-        {
-            id: 2,
-            name: "test2",
-            html_url: "test2",
-        },
-    ];
-
-    const [response, setResponse] = useState(initialData);
-    const [appStatus, setAppStatus] = useState("loading");
+    const [response, setResponse] = useState(null);
     const demoDelay = 2000;
 
     useEffect(() => {
@@ -36,7 +22,6 @@ const Portfolio = () => {
                     setResponse(response)
                     console.log(response)
                 })
-                .then(setAppStatus("succes"))
                 .catch(error =>
                     console.log(error));
         }, demoDelay);
@@ -48,9 +33,9 @@ const Portfolio = () => {
             <SectionHeader title={"Portfolio"} portfolio />
             <Subtitle>My recent projects</Subtitle>
 
-            {appStatus === "succes" &&
+            {response &&
                 response.map(repository => (
-                    <li key={repository.id}>{repository.name},  {repository.html_url}</li>
+                    <li key={repository.id}>{repository.name},  {repository.html_url}, {repository.description}, {`https://kamilstawik.github.io/${repository.name}/`}</li>
                 ))
             }
         </>
