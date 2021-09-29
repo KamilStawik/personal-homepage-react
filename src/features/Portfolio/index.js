@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { GitHubIcon } from "./GitHubIcon/index.js";
 import SectionHeader from "../../common/SectionHeader/index.js";
-import { Subtitle } from "./styled.js";
+import Tile from './Tile/index.js';
+import { Subtitle, TilesWrapper } from "./styled.js";
 
 const Portfolio = () => {
 
@@ -32,12 +33,19 @@ const Portfolio = () => {
             <GitHubIcon />
             <SectionHeader title={"Portfolio"} portfolio />
             <Subtitle>My recent projects</Subtitle>
-
-            {response &&
-                response.map(repository => (
-                    <li key={repository.id}>{repository.name},  {repository.html_url}, {repository.description}, {`https://kamilstawik.github.io/${repository.name}/`}</li>
-                ))
-            }
+            <TilesWrapper>
+                {response &&
+                    response.map(repository => (
+                        <Tile
+                            key={repository.id}
+                            title={repository.name}
+                            repositoryAdress={repository.html_url}
+                            demoAdress={`https://kamilstawik.github.io/${repository.name}/`}
+                            description={repository.description}
+                        />
+                    ))
+                }
+            </TilesWrapper>
         </>
     );
 }

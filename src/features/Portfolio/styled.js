@@ -8,3 +8,8 @@ export const Subtitle = styled.h3`
     letter-spacing: 0.05em;
     color: ${({ theme }) => (theme.colors.mineShaft)};
 `;
+
+export const TilesWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
