@@ -4,21 +4,17 @@ const homepageSlice = createSlice(
     {
         name: 'homepage',
         initialState: {
-            repositories: [
-                {
-                    id: 1,
-                    content: "test",
-                },
-            ],
+            repositories: [],
         },
 
-        redusers: {
-            getRepositories: ({ repositories }, { payload }) => {
+        reducers: {
+            fetchRepositoriesFromApi: () => { },
+            setRepositories: ({ repositories }, { payload }) => {
                 repositories.push(payload);
             },
         },
     });
 
-export const { getRepositories } = homepageSlice.actions;
+export const { fetchRepositoriesFromApi, setRepositories } = homepageSlice.actions;
 export const selectRepositories = state => state.homepage.repositories;
 export default homepageSlice.reducer;
