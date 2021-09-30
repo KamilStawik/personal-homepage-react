@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { GitHubIcon } from "./GitHubIcon/index.js";
 import SectionHeader from "../../../common/SectionHeader/index.js";
 import Tile from './Tile/index.js';
 import { Subtitle, TilesWrapper } from "./styled.js";
+import { selectRepositories } from '../homepageSlice.js';
 
 const Portfolio = () => {
+
+    const repositories = useSelector(selectRepositories);
+    console.log(repositories);
+
 
     const [response, setResponse] = useState(null);
     const demoDelay = 2000;
