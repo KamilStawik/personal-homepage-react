@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import kamilStawik from "../../../images/kamilStawik.jpg"
+import styled from 'styled-components';
+import kamilStawik from '../../../images/kamilStawik.jpg';
 
 export const Wrapper = styled.div`
   	display: flex;
@@ -20,14 +20,6 @@ export const InfoContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-`;
-
-export const TopSpan = styled.span`
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 1.3;
-	text-transform: uppercase;
-	color: ${({ theme }) => (theme.colors.slateGray)};
 `;
 
 export const Header = styled.h1`
