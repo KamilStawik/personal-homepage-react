@@ -4,5 +4,5 @@ export const StyledButton = styled.button`
     border: none;
     background-color: inherit;
     cursor: pointer;
-    align-self: flex-end;
+    float: right;
 `;

@@ -16,22 +16,20 @@ export const Photo = styled.div`
 
 export const InfoContainer = styled.div`
 	margin-left: 66px;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+	margin-top: 66px;
 `;
 
 export const Header = styled.h1`
 	font-weight: 900;
 	font-size: 38px;
-	margin: 0px;
+	margin: 12px 0px 0px 0px;
 	letter-spacing: 0.05em;
 	color: ${({ theme }) => (theme.colors.mineShaft)};
 `;
 
-export const IntroductionSpan = styled.span`
-	max-width: 633px;
+export const IntroductionText = styled.p`
+	max-width: 85%;
+	margin: 32px 0px;
 	font-size: 20px;
 	line-height: 1.4;
 	letter-spacing: 0.05em;

@@ -1,4 +1,4 @@
-import { Wrapper, Photo, Header, IntroductionSpan, InfoContainer } from './styled';
+import { Wrapper, Photo, Header, IntroductionText, InfoContainer } from './styled';
 import TopText from './../../../common/TopText'
 import DarkModeToggler from './DarkModeToggler';
 import HireMeButton from './HireMeButton';
@@ -6,15 +6,17 @@ import HireMeButton from './HireMeButton';
 const PersonalInfo = () => (
     <Wrapper>
         <Photo />
-        <InfoContainer>
+        <div>
             <DarkModeToggler />
-            <TopText>this is</TopText>
-            <Header>Kamil Stawik</Header>
-            <IntroductionSpan>
-                👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
-            </IntroductionSpan>
-            <HireMeButton />
-        </InfoContainer>
+            <InfoContainer>
+                <TopText>this is</TopText>
+                <Header>Kamil Stawik</Header>
+                <IntroductionText>
+                    👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
+                </IntroductionText>
+                <HireMeButton />
+            </InfoContainer>
+        </div>
     </Wrapper>
 );
 
