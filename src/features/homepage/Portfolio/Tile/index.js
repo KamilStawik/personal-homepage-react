@@ -1,4 +1,4 @@
-import { Description, KeyWord, Link, StyledTile, TileHeader, } from "./styled";
+import { Description, KeyWord, Link, StyledTile, TileHeader, } from './styled';
 
 const Tile = ({ title, repositoryAdress, demoAdress, description }) => (
 

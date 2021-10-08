@@ -1,5 +1,5 @@
-import { ReactComponent as DarkModeOff } from "../../../../images/darkModeOff.svg";
-import { StyledButton } from "./styled";
+import { ReactComponent as DarkModeOff } from '../../../../images/darkModeOff.svg';
+import { StyledButton } from './styled';
 
 const DarkModeToggler = () => (
     <StyledButton>
