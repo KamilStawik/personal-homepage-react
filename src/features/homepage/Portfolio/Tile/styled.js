@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledTile = styled.div`
-    margin: 16px;
     padding: 56px;
     border: 6px solid rgba(209, 213, 218, 0.3);
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
-    flex-basis: 40%;
-    flex-grow: 1;
 
     &:hover {
         transition: border 1s;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import listBullet from '../../../iconly/listBullet.svg';
 
 export const Wrapper = styled.section`
 	max-width: 1216px;
@@ -15,13 +16,14 @@ export const UnorderedList = styled.ul`
 `;
 
 export const ListItem = styled.li`
+	list-style-image: url(${listBullet});
 	line-height: 1.4;
-	letter-spacing: 0.05em;
-	color: ${({ theme }) => (theme.colors.scienceBlue)};
 	margin: 4px 0px;
 	flex-basis: 33%;
 `;
 
 export const ListItemText = styled.span`
+	margin-left: 12px;
+	letter-spacing: 0.05em;
 	color: ${({ theme }) => (theme.colors.slateGray)};
 `;

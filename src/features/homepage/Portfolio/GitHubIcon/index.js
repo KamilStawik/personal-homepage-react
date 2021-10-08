@@ -7,11 +7,12 @@ export const GitHubIcon = styled(GitHub)`
     margin: auto;
 
     ${({ socialMediaSection }) => socialMediaSection && css`
+        margin: 0px;
         width: 48px;
         fill: ${({ theme }) => (theme.colors.mineShaft)};
 
         &:hover{
-            transition: 1s linear;
+            transition: 0.5s linear;
             fill: ${({ theme }) => (theme.colors.scienceBlue)};
         }
     `}
