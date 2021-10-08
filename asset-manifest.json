@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.152075d4.chunk.js",
-    "main.js.map": "/personal-homepage-react/static/js/main.152075d4.chunk.js.map",
+    "main.js": "/personal-homepage-react/static/js/main.5d49331a.chunk.js",
+    "main.js.map": "/personal-homepage-react/static/js/main.5d49331a.chunk.js.map",
     "runtime-main.js": "/personal-homepage-react/static/js/runtime-main.706c2cb5.js",
     "runtime-main.js.map": "/personal-homepage-react/static/js/runtime-main.706c2cb5.js.map",
     "static/js/2.d0be6c7a.chunk.js": "/personal-homepage-react/static/js/2.d0be6c7a.chunk.js",
@@ -13,11 +13,12 @@
     "static/media/darkModeOff.dd823077.svg": "/personal-homepage-react/static/media/darkModeOff.dd823077.svg",
     "static/media/gitHub.bab7677d.svg": "/personal-homepage-react/static/media/gitHub.bab7677d.svg",
     "static/media/kamilStawik.098d43c6.jpg": "/personal-homepage-react/static/media/kamilStawik.098d43c6.jpg",
+    "static/media/listBullet.c28602c8.svg": "/personal-homepage-react/static/media/listBullet.c28602c8.svg",
     "static/media/message.cad96cea.svg": "/personal-homepage-react/static/media/message.cad96cea.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.706c2cb5.js",
     "static/js/2.d0be6c7a.chunk.js",
-    "static/js/main.152075d4.chunk.js"
+    "static/js/main.5d49331a.chunk.js"
   ]
 }
