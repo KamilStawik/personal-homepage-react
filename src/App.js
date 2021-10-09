@@ -1,8 +1,12 @@
+import { Normalize } from "styled-normalize";
 import Homepage from "./Homepage";
 
 function App() {
   return (
-    <Homepage />
+    <>
+      <Normalize />
+      <Homepage />
+    </>
   );
 }
 
