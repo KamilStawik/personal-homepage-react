@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import listBullet from '../../../images/listBullet.svg';
+import listBullet from '../../images/listBullet.svg';
 
 export const Wrapper = styled.section`
 	max-width: 1216px;

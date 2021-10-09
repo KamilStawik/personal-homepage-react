@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { ReactComponent as GitHub } from '../../../../images/gitHub.svg';
+import { ReactComponent as GitHub } from '../../../images/gitHub.svg';
 
 export const GitHubIcon = styled(GitHub)`
     fill: ${({ theme }) => (theme.colors.scienceBlue)};

@@ -1,5 +1,5 @@
 import { Wrapper, Photo, Header, IntroductionText, InfoContainer } from './styled';
-import TopText from './../../../common/TopText'
+import TopText from './../../common/TopText'
 import DarkModeToggler from './DarkModeToggler';
 import HireMeButton from './HireMeButton';
 

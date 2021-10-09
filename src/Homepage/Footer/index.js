@@ -1,4 +1,4 @@
-import TopText from '../../../common/TopText';
+import TopText from '../../common/TopText';
 import { EncouragingText, SocialMediaWrapper, StyledMail, Wrapper } from './styled';
 import encouragingTextContent from './encouragingTextContent';
 import { GitHubIcon } from '../Portfolio/GitHubIcon';

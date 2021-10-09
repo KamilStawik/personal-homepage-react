@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import kamilStawik from '../../../images/kamilStawik.jpg';
+import kamilStawik from './../../images/kamilStawik.jpg';
 
 export const Wrapper = styled.div`
   	display: flex;
