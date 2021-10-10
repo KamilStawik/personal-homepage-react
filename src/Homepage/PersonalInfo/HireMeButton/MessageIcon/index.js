@@ -1,7 +1,6 @@
+import styled from 'styled-components';
 import { ReactComponent as Message } from '../../../../images/message.svg';
 
-const MessageIcon = () => (
-    <Message />
-);
-
-export default MessageIcon;
+export const MessageIcon = styled(Message)`
+    vertical-align: middle;
+`;

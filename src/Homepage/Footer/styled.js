@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     width: 60%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 `;
 
 export const StyledMail = styled.a`
@@ -15,6 +16,12 @@ export const StyledMail = styled.a`
     letter-spacing: 0.05em;
     text-decoration: none;
     color: ${({ theme }) => (theme.colors.secondFont)};
+    cursor: pointer;
+
+    &:hover {
+        transition: color 0.5s;
+        color: ${({ theme }) => (theme.colors.mainBlue)};
+    }
 `;
 
 export const EncouragingText = styled.p`
