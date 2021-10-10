@@ -1,4 +1,4 @@
-import { ListItem, ListItemText, UnorderedList, Wrapper } from './styled';
+import { ListItem, ListItemText, ListBullet, UnorderedList, Wrapper } from './styled';
 import SectionHeader from '../../common/SectionHeader';
 
 const SkillSet = ({ title, content }) => (
@@ -7,7 +7,10 @@ const SkillSet = ({ title, content }) => (
     <SectionHeader title={title} />
     <UnorderedList>
       {content.map(skill => (
-        <ListItem key={skill.id}><ListItemText>{skill.content}</ListItemText></ListItem>
+        <ListItem key={skill.id}>
+          <ListBullet />
+          <ListItemText>{skill.content}</ListItemText>
+        </ListItem>
       ))}
     </UnorderedList>
   </Wrapper>

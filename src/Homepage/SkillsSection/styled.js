@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import listBullet from '../../images/listBullet.svg';
+import { ReactComponent as Icone } from '../../images/listBullet.svg';
+
+export const ListBullet = styled(Icone)`
+    fill: ${({ theme }) => (theme.colors.mainBlue)};
+`;
 
 export const Wrapper = styled.section`
 	max-width: 1216px;
@@ -10,13 +14,13 @@ export const Wrapper = styled.section`
 `;
 
 export const UnorderedList = styled.ul`
+	list-style-type: none;
 	padding-left: 20px;
 	display: flex;
 	flex-wrap: wrap;
 `;
 
 export const ListItem = styled.li`
-	list-style-image: url(${listBullet});
 	line-height: 1.4;
 	margin: 4px 0px;
 	flex-basis: 33%;
@@ -25,5 +29,5 @@ export const ListItem = styled.li`
 export const ListItemText = styled.span`
 	margin-left: 12px;
 	letter-spacing: 0.05em;
-	color: ${({ theme }) => (theme.colors.slateGray)};
+	color: ${({ theme }) => (theme.colors.mainFont)};
 `;
