@@ -17,7 +17,7 @@ export const TileHeader = styled.header`
     font-weight: bold;
     line-height: 29px;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.scienceBlue)};
+    color: ${({ theme }) => (theme.colors.tileHeader)};
 `;
 
 export const Description = styled.span`
@@ -25,7 +25,7 @@ export const Description = styled.span`
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.slateGray)};
+    color: ${({ theme }) => (theme.colors.mainFont)};
     margin: 24px 0px;
 `;
 
@@ -33,7 +33,7 @@ export const KeyWord = styled.span`
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.slateGray)};
+    color: ${({ theme }) => (theme.colors.mainFont)};
     margin: 8px 0px;
 `;
 
@@ -41,6 +41,6 @@ export const Link = styled.a`
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.scienceBlue)};
+    color: ${({ theme }) => (theme.colors.mainBlue)};
     margin: 8px 0px;
 `;

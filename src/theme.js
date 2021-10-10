@@ -1,16 +1,11 @@
 export const lightTheme = {
     colors: {
         background: "#FFFFFF",
-        black: "#000000",
-        grey: "#808080",
-        slateGray: "#6E7E91",
-        mineShaft: "#252525",
+        mainFont: "#6E7E91",
+        secondFont: "#252525",
+        mainBlue: "#0366D6",
+        tileHeader: "#0366D6",
         white: "#FFFFFF",
-
-        scienceBlue: "#0366D6",
-        anakiwa: "#8CC2FF",
-
-        parsley: "#144620",
     },
 
     breakPoints: {
@@ -21,16 +16,11 @@ export const lightTheme = {
 export const darkTheme = {
     colors: {
         background: "#252525",
-        black: "#000000",
-        grey: "#808080",
-        slateGray: "#6E7E91",
-        mineShaft: "#252525",
+        mainFont: "#FFFFFF",
+        secondFont: "#FFFFFF",
+        mainBlue: "#2188FF",
+        tileHeader: "#FFFFFF",
         white: "#FFFFFF",
-
-        scienceBlue: "#0366D6",
-        anakiwa: "#8CC2FF",
-
-        parsley: "#144620",
     },
 
     breakPoints: {

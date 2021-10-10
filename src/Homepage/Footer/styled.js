@@ -14,7 +14,7 @@ export const StyledMail = styled.a`
     line-height: 39px;
     letter-spacing: 0.05em;
     text-decoration: none;
-    color: ${({ theme }) => (theme.colors.mineShaft)};
+    color: ${({ theme }) => (theme.colors.secondFont)};
 `;
 
 export const EncouragingText = styled.p`
@@ -22,7 +22,7 @@ export const EncouragingText = styled.p`
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.mineShaft)};
+    color: ${({ theme }) => (theme.colors.secondFont)};
 `;
 
 export const SocialMediaWrapper = styled.div`

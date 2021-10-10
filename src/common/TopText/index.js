@@ -6,7 +6,7 @@ const TopText = styled.span`
 	font-size: 12px;
 	line-height: 1.3;
 	text-transform: uppercase;
-	color: ${({ theme }) => (theme.colors.slateGray)};
+	color: ${({ theme }) => (theme.colors.mainFont)};
 `;
 
 export default TopText;

@@ -24,7 +24,7 @@ export const Header = styled.h1`
 	font-size: 38px;
 	margin: 12px 0px 0px 0px;
 	letter-spacing: 0.05em;
-	color: ${({ theme }) => (theme.colors.mineShaft)};
+	color: ${({ theme }) => (theme.colors.secondFont)};
 `;
 
 export const IntroductionText = styled.p`
@@ -33,5 +33,5 @@ export const IntroductionText = styled.p`
 	font-size: 20px;
 	line-height: 1.4;
 	letter-spacing: 0.05em;
-	color: ${({ theme }) => (theme.colors.slateGray)};
+	color: ${({ theme }) => (theme.colors.mainFont)};
 `;

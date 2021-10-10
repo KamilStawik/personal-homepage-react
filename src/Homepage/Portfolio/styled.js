@@ -6,7 +6,7 @@ export const Subtitle = styled.span`
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.mineShaft)};
+    color: ${({ theme }) => (theme.colors.secondFont)};
     margin-bottom: 24px;
 `;
 
