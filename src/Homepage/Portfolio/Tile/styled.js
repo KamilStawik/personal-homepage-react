@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const StyledTile = styled.div`
     padding: 56px;
-    border: 6px solid rgba(209, 213, 218, 0.3);
+    background-color: ${({ theme }) => (theme.colors.tileBackground)};
+    border: 6px solid ${({ theme }) => (theme.colors.tileBorder)};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
 
     &:hover {
         transition: border 1s;
-        border: 6px solid rgba(3, 102, 214, 0.2);
+        border: 6px solid ${({ theme }) => (theme.colors.tileBorderOnHover)};
     }
 `;
 

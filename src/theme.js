@@ -5,6 +5,9 @@ export const lightTheme = {
         secondFont: "#252525",
         mainBlue: "#0366D6",
         tileHeader: "#0366D6",
+        tileBackground: "#FFFFFF",
+        tileBorder: "rgba(209, 213, 218, 0.3)",
+        tileBorderOnHover: "rgba(3, 102, 214, 0.2)",
         white: "#FFFFFF",
     },
 
@@ -20,6 +23,9 @@ export const darkTheme = {
         secondFont: "#FFFFFF",
         mainBlue: "#2188FF",
         tileHeader: "#FFFFFF",
+        tileBackground: "#363636",
+        tileBorder: "rgba(209, 213, 218, 0.1)",
+        tileBorderOnHover: "rgba(3, 102, 214, 0.5)",
         white: "#FFFFFF",
     },
 
