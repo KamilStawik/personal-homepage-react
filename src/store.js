@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import homepageReducer from './Homepage/homepageSlice';
-import { watchFetchRepositoriesFromApi } from './Homepage/homepageSaga';
+import { watchFetchRepositoriesFromApi } from './Homepage/Portfolio/portfolioSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 
