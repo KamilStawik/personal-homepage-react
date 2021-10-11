@@ -10,7 +10,8 @@ export const StyledButton = styled.a`
     line-height: 24px;
     letter-spacing: 0.05em;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    align-self: flex-start;
 
     &:hover {
         box-shadow: 2px -2px 0px #8CC2FF,
@@ -25,5 +26,10 @@ export const StyledButton = styled.a`
 `;
 
 export const ButtonText = styled.span`
+    font-size: 20px;
     margin-left: 12px;
+    
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        font-size: 18px;
+    }
 `;

@@ -12,7 +12,7 @@ export const lightTheme = {
     },
 
     breakPoints: {
-        mobile: 767,
+        mobileMax: "767",
     },
 };
 
@@ -30,6 +30,6 @@ export const darkTheme = {
     },
 
     breakPoints: {
-        mobile: 767,
+        mobileMax: "767",
     },
 };
