@@ -1,11 +1,12 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
+import { getThemeFromLocalStorage } from './themeLocalStorage';
 
 const homepageSlice = createSlice(
     {
         name: 'homepage',
         initialState: {
             repositories: [],
-            darkTheme: false,
+            darkTheme: getThemeFromLocalStorage(),
         },
 
         reducers: {
