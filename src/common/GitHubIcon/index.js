@@ -5,8 +5,6 @@ const GitHubIcon = styled(GitHub)`
     fill: ${({ theme }) => (theme.colors.mainBlue)};
     width: 40px;
     height: 40px;
-    display: block;
-    margin: auto;
 
     ${({ socialmedia }) => socialmedia && css`
         margin: 0px;

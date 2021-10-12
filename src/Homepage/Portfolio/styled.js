@@ -1,4 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
 export const Subtitle = styled.span`
     display: block;
@@ -9,8 +15,17 @@ export const Subtitle = styled.span`
     color: ${({ theme }) => (theme.colors.secondFont)};
     margin-bottom: 24px;
 
+    ${({ loadingText }) => loadingText && css`
+        margin-top: 88px;
+        margin-bottom: 48px;
+    `}
+
     @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
         font-size: 16px;
+        
+        ${({ loadingText }) => loadingText && css`
+        margin-top: 48px;
+    `}
     }
 `;
 

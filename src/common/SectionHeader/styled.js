@@ -8,7 +8,6 @@ export const StyledHeader = styled.h2`
     color: ${({ theme }) => (theme.colors.secondFont)};
 
     ${({ portfolio }) => portfolio && css`
-        text-align: center;
         margin-top: 12px;
         margin-bottom: 8px;
     `}
