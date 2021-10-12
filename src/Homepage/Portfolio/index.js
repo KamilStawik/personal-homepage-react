@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { GitHubIcon } from './GitHubIcon/index.js';
+import GitHubIcon from './../../common/GitHubIcon';
 import SectionHeader from '../../common/SectionHeader/index.js';
 import Tile from './Tile/index.js';
 import { Subtitle, TilesWrapper } from './styled.js';

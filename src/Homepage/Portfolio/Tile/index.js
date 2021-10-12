@@ -1,16 +1,12 @@
-import { Description, KeyWord, Link, StyledTile, TileHeader, } from './styled';
+import { Description, Link, StyledTile, TileHeader, } from './styled';
 
 const Tile = ({ title, repositoryAdress, demoAdress, description }) => (
 
     <StyledTile>
         <TileHeader>{title}</TileHeader>
         <Description>{description}</Description>
-        <div>
-            <KeyWord>Demo: </KeyWord><Link href={demoAdress}>{demoAdress}</Link>
-        </div>
-        <div>
-            <KeyWord>Code: </KeyWord><Link href={repositoryAdress}>{repositoryAdress}</Link>
-        </div>
+        <Link href={demoAdress}>Check out demo!</Link>
+        <Link href={repositoryAdress}>Have a look at code!</Link>
     </StyledTile>
 );
 

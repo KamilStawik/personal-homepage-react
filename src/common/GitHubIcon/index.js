@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { ReactComponent as GitHub } from '../../../images/gitHub.svg';
+import { ReactComponent as GitHub } from '../../images/gitHub.svg';
 
-export const GitHubIcon = styled(GitHub)`
+const GitHubIcon = styled(GitHub)`
     fill: ${({ theme }) => (theme.colors.mainBlue)};
     display: block;
     margin: auto;
@@ -16,4 +16,11 @@ export const GitHubIcon = styled(GitHub)`
             fill: ${({ theme }) => (theme.colors.mainBlue)};
         }
     `}
+    
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        width: 32px;
+        height: 31px; 
+    }
 `;
+
+export default GitHubIcon;

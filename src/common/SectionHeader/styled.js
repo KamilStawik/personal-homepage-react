@@ -16,5 +16,9 @@ export const StyledHeader = styled.h2`
     @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
         font-size: 18px;
         margin: 0px 0px 24px 0px;
+
+        ${({ portfolio }) => portfolio && css`
+            margin: 12px 0px 16px 0px;
+        `}
     }
 `;

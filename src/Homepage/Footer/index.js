@@ -1,7 +1,7 @@
 import TopText from '../../common/TopText';
 import { EncouragingText, SocialMediaWrapper, StyledMail, Wrapper } from './styled';
 import encouragingTextContent from './encouragingTextContent';
-import { GitHubIcon } from '../Portfolio/GitHubIcon';
+import GitHubIcon from '../../common/GitHubIcon';
 import mailAddress from './../content/mailAddress'
 
 const Footer = () => (

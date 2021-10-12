@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         background-color: ${({ theme }) => (theme.colors.background)};
         font-family: "Inter", sans-serif;
+        word-break: break-word;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
