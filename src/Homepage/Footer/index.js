@@ -11,7 +11,7 @@ const Footer = () => (
         <StyledMail href={`mailto:${mailAddress}`}>{mailAddress}</StyledMail>
         <EncouragingText>{encouragingTextContent}</EncouragingText>
         <SocialMediaWrapper>
-            <GitHubIcon socialMediaSection />
+            <GitHubIcon socialmedia="true" />
         </SocialMediaWrapper>
     </Wrapper>
 );

@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        margin-top: 48px;
+        width: 100%;
+    }
 `;
 
 export const StyledMail = styled.a`
@@ -17,6 +22,12 @@ export const StyledMail = styled.a`
     text-decoration: none;
     color: ${({ theme }) => (theme.colors.secondFont)};
     cursor: pointer;
+
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 12px 0px;
+    }
 
     &:hover {
         transition: color 0.5s;
@@ -30,9 +41,17 @@ export const EncouragingText = styled.p`
     line-height: 1.4;
     letter-spacing: 0.05em;
     color: ${({ theme }) => (theme.colors.secondFont)};
+
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        font-size: 14px;
+    }
 `;
 
 export const SocialMediaWrapper = styled.div`
     margin: 56px 0px;
     display: flex;
+
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        margin: 40px 0px 24px 0px;
+    }
 `;
