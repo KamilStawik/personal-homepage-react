@@ -10,7 +10,7 @@ const Homepage = () => (
     <Container>
         <PersonalInfo />
         <SkillsSection title={"My skillset includes 🛠️"} content={skillSetContent} />
-        <SkillsSection title={"What I want to learn next"} content={futureSkillsContent} />
+        <SkillsSection title={"What I want to learn next 🚀"} content={futureSkillsContent} />
         <Portfolio />
         <Footer />
     </Container>

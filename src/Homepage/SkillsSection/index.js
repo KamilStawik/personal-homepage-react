@@ -1,7 +1,7 @@
 import { ListItem, ListItemText, ListBullet, UnorderedList, Wrapper } from './styled';
 import SectionHeader from '../../common/SectionHeader';
 
-const SkillSet = ({ title, content }) => (
+const SkillsSection = ({ title, content }) => (
 
   <Wrapper>
     <SectionHeader title={title} />
@@ -17,4 +17,4 @@ const SkillSet = ({ title, content }) => (
 
 );
 
-export default SkillSet;
+export default SkillsSection;
