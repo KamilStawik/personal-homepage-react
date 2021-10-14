@@ -48,11 +48,11 @@ export const EncouragingText = styled.p`
 `;
 
 export const SocialMediaWrapper = styled.div`
-    margin: 56px 0px;
+    margin: 56px 0px 0px 0px;
     display: flex;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
-        margin: 40px 0px 24px 0px;
+        margin: 32px 0px 12px 0px;
     }
 `;
 

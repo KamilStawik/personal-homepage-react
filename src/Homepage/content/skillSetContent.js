@@ -19,9 +19,10 @@ const skillSetContent =
         { id: 17, content: "Working with API (fetch, axios)" },
         { id: 18, content: "React" },
         { id: 19, content: "CSS Grid" },
+        // eslint-disable-next-line
         { id: 20, content: "JavaScript: ES6+" },
         { id: 21, content: "Git" },
         { id: 22, content: "CSS Flexbox" },
-    ]
+    ];
 
 export default skillSetContent;

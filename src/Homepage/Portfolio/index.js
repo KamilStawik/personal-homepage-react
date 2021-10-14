@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import GitHubIcon from './../../common/GitHubIcon';
 import SectionHeader from '../../common/SectionHeader/';
 import Tile from './Tile';
+import Button from './../../common/Button';
 import LoadingCircle from './LoadingCircle'
 import DangerIcon from './DangerIcon';
 import { Wrapper, Subtitle, TilesWrapper, ErrorText } from './styled.js';
-import { selectRepositories, fetchRepositoriesFromApi, selectApplicationStatus } from '../homepageSlice.js';
-import Button from '../../common/Button';
+import { selectRepositories, fetchRepositoriesFromApi, selectApplicationStatus } from './../homepageSlice.js';
 
 const Portfolio = () => {
 
@@ -15,6 +15,7 @@ const Portfolio = () => {
     const repositories = useSelector(selectRepositories);
     const applicationStatus = useSelector(selectApplicationStatus);
 
+    // eslint-disable-next-line
     useEffect(() => dispatch(fetchRepositoriesFromApi()), []);
 
     return (

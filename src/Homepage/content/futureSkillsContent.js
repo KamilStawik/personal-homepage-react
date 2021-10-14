@@ -6,6 +6,6 @@ const futureSkillsContent =
         { id: 4, content: "Node.js" },
         { id: 5, content: "Unit testing" },
         { id: 6, content: "JS classes" },
-    ]
+    ];
 
 export default futureSkillsContent;
