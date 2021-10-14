@@ -9,6 +9,7 @@ export const StyledButton = styled.button`
 	align-items: center;
 	justify-content: flex-end;
 	justify-self: flex-end;
+	align-self: flex-start;
 `;
 
 export const ThemeTogglerText = styled.span`

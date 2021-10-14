@@ -34,6 +34,7 @@ export const Subtitle = styled.span`
 `;
 
 export const TilesWrapper = styled.div`
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
