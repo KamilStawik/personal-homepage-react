@@ -55,3 +55,6 @@ export const SocialMediaWrapper = styled.div`
         margin: 40px 0px 24px 0px;
     }
 `;
+
+export const GitHubLink = styled.a`
+`;
