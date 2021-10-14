@@ -20,6 +20,10 @@ export const Subtitle = styled.span`
         margin-bottom: 48px;
     `}
 
+    ${({ errorText }) => errorText && css`
+        margin: 0px;
+    `}
+
     @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
         font-size: 16px;
         
@@ -37,5 +41,20 @@ export const TilesWrapper = styled.div`
     @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
         grid-template-columns: 1fr;
         grid-gap: 16px;
+    }
+`;
+
+export const ErrorText = styled.span`
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: ${({ theme }) => (theme.colors.secondFont)};
+
+    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+        font-size: 18px;
     }
 `;

@@ -4,7 +4,8 @@ import GitHubIcon from './../../common/GitHubIcon';
 import SectionHeader from '../../common/SectionHeader/';
 import Tile from './Tile';
 import LoadingCircle from './LoadingCircle'
-import { Wrapper, Subtitle, TilesWrapper } from './styled.js';
+import DangerIcon from './DangerIcon';
+import { Wrapper, Subtitle, TilesWrapper, ErrorText } from './styled.js';
 import { selectRepositories, fetchRepositoriesFromApi, selectApplicationStatus } from '../homepageSlice.js';
 
 const Portfolio = () => {
@@ -12,7 +13,7 @@ const Portfolio = () => {
     const dispatch = useDispatch();
     const repositories = useSelector(selectRepositories);
     const applicationStatus = useSelector(selectApplicationStatus);
-    
+
     useEffect(() => dispatch(fetchRepositoriesFromApi()), []);
 
     return (
@@ -42,8 +43,10 @@ const Portfolio = () => {
             }
             {applicationStatus === "error" &&
                 <>
-                    <Subtitle loadingText>Uwaga ERROR</Subtitle>
-                    <LoadingCircle />
+                    <DangerIcon />
+                    <ErrorText>Ooops! Something went wrong...</ErrorText>
+                    <Subtitle errorText>Sorry, failed to load Github projects.</Subtitle>
+                    <Subtitle errorText>You can check them directly on Github.</Subtitle>
                 </>
             }
         </Wrapper>
