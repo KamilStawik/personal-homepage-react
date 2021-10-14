@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.6a2c2267.chunk.js",
-    "main.js.map": "/personal-homepage-react/static/js/main.6a2c2267.chunk.js.map",
-    "runtime-main.js": "/personal-homepage-react/static/js/runtime-main.870d8520.js",
-    "runtime-main.js.map": "/personal-homepage-react/static/js/runtime-main.870d8520.js.map",
-    "static/js/2.6a96a86b.chunk.js": "/personal-homepage-react/static/js/2.6a96a86b.chunk.js",
-    "static/js/2.6a96a86b.chunk.js.map": "/personal-homepage-react/static/js/2.6a96a86b.chunk.js.map",
-    "static/js/3.9e8d3c02.chunk.js": "/personal-homepage-react/static/js/3.9e8d3c02.chunk.js",
-    "static/js/3.9e8d3c02.chunk.js.map": "/personal-homepage-react/static/js/3.9e8d3c02.chunk.js.map",
+    "main.js": "/personal-homepage-react/static/js/main.4865ffaf.chunk.js",
+    "main.js.map": "/personal-homepage-react/static/js/main.4865ffaf.chunk.js.map",
+    "runtime-main.js": "/personal-homepage-react/static/js/runtime-main.db16f0d5.js",
+    "runtime-main.js.map": "/personal-homepage-react/static/js/runtime-main.db16f0d5.js.map",
+    "static/js/2.41a1d5d1.chunk.js": "/personal-homepage-react/static/js/2.41a1d5d1.chunk.js",
+    "static/js/2.41a1d5d1.chunk.js.map": "/personal-homepage-react/static/js/2.41a1d5d1.chunk.js.map",
+    "static/js/3.ced45acb.chunk.js": "/personal-homepage-react/static/js/3.ced45acb.chunk.js",
+    "static/js/3.ced45acb.chunk.js.map": "/personal-homepage-react/static/js/3.ced45acb.chunk.js.map",
     "index.html": "/personal-homepage-react/index.html",
-    "static/js/2.6a96a86b.chunk.js.LICENSE.txt": "/personal-homepage-react/static/js/2.6a96a86b.chunk.js.LICENSE.txt",
+    "static/js/2.41a1d5d1.chunk.js.LICENSE.txt": "/personal-homepage-react/static/js/2.41a1d5d1.chunk.js.LICENSE.txt",
+    "static/media/danger.7a8ee71a.svg": "/personal-homepage-react/static/media/danger.7a8ee71a.svg",
     "static/media/darkModeOff.52c00c0f.svg": "/personal-homepage-react/static/media/darkModeOff.52c00c0f.svg",
     "static/media/darkModeOn.165bbd71.svg": "/personal-homepage-react/static/media/darkModeOn.165bbd71.svg",
     "static/media/ellipse.88a075cf.svg": "/personal-homepage-react/static/media/ellipse.88a075cf.svg",
@@ -19,8 +20,8 @@
     "static/media/message.cad96cea.svg": "/personal-homepage-react/static/media/message.cad96cea.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.870d8520.js",
-    "static/js/2.6a96a86b.chunk.js",
-    "static/js/main.6a2c2267.chunk.js"
+    "static/js/runtime-main.db16f0d5.js",
+    "static/js/2.41a1d5d1.chunk.js",
+    "static/js/main.4865ffaf.chunk.js"
   ]
 }
