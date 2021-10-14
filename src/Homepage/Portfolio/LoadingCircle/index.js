@@ -9,7 +9,7 @@ const LoadingCircle = styled(EllipseIcon)`
 
     @keyframes spin { 100% {transform:rotate(360deg);} };
     
-    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         width: 80px;
         height: 80px;
         margin-bottom: 20px;

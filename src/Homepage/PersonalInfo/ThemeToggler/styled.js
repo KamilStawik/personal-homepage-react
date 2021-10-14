@@ -17,9 +17,9 @@ export const ThemeTogglerText = styled.span`
 	font-size: 12px;
 	line-height: 1.3;
 	text-transform: uppercase;
-	color: ${({ theme }) => (theme.colors.mainFont)};
+	color: ${({ theme }) => theme.colors.mainFont};
 
-    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
 		display: none;
     }
 `;

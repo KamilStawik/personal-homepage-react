@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 		"photo personalInfo"
 	;
 
-	@media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
 		grid-gap: 12px;
 		grid-template-rows: auto;
 		grid-template-areas: 
@@ -28,7 +28,7 @@ export const Photo = styled.div`
 	width: 400px;
 	border-radius: 50%;
 
-	@media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
 		height: 132px;
 		width: 132px;
     }
@@ -46,9 +46,9 @@ export const Header = styled.h1`
 	font-size: 38px;
 	margin: 12px 0px 0px 0px;
 	letter-spacing: 0.05em;
-	color: ${({ theme }) => (theme.colors.secondFont)};
+	color: ${({ theme }) => theme.colors.secondFont};
 
-	@media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
 		font-size: 22px;
     }
 `;
@@ -59,9 +59,9 @@ export const IntroductionText = styled.p`
 	font-size: 20px;
 	line-height: 1.4;
 	letter-spacing: 0.05em;
-	color: ${({ theme }) => (theme.colors.mainFont)};
+	color: ${({ theme }) => theme.colors.mainFont};
 
-	@media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
 		max-width: 100%;
 		margin: 16px 0px;
 		font-size: 17px;

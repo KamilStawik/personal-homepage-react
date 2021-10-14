@@ -7,6 +7,7 @@ import LoadingCircle from './LoadingCircle'
 import DangerIcon from './DangerIcon';
 import { Wrapper, Subtitle, TilesWrapper, ErrorText } from './styled.js';
 import { selectRepositories, fetchRepositoriesFromApi, selectApplicationStatus } from '../homepageSlice.js';
+import Button from '../../common/Button';
 
 const Portfolio = () => {
 
@@ -47,6 +48,7 @@ const Portfolio = () => {
                     <ErrorText>Ooops! Something went wrong...</ErrorText>
                     <Subtitle errorText>Sorry, failed to load Github projects.</Subtitle>
                     <Subtitle errorText>You can check them directly on Github.</Subtitle>
+                    <Button buttonText={"Go to Github"} gitButton />
                 </>
             }
         </Wrapper>

@@ -9,7 +9,7 @@ const Container = styled.main`
         margin: 66px 32px;
     }
 
-    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         margin: 16px;
     }
 `;

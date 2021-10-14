@@ -12,7 +12,7 @@ export const Subtitle = styled.span`
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.secondFont)};
+    color: ${({ theme }) => theme.colors.secondFont};
     margin-bottom: 24px;
 
     ${({ loadingText }) => loadingText && css`
@@ -24,7 +24,7 @@ export const Subtitle = styled.span`
         margin: 0px;
     `}
 
-    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         font-size: 16px;
         
         ${({ loadingText }) => loadingText && css`
@@ -38,7 +38,7 @@ export const TilesWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
 
-    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         grid-template-columns: 1fr;
         grid-gap: 16px;
     }
@@ -52,9 +52,9 @@ export const ErrorText = styled.span`
     font-weight: bold;
     line-height: 1.4;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => (theme.colors.secondFont)};
+    color: ${({ theme }) => theme.colors.secondFont};
 
-    @media (max-width: ${({ theme }) => (theme.breakPoints.mobileMax)}px) {
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         font-size: 18px;
     }
 `;

@@ -1,7 +1,7 @@
 import { Wrapper, Photo, Header, IntroductionText, InfoContainer } from './styled';
 import TopText from './../../common/TopText'
 import ThemeToggler from './ThemeToggler';
-import HireMeButton from './HireMeButton';
+import Button from './../../common/Button';
 
 const PersonalInfo = () => (
     <Wrapper>
@@ -13,7 +13,7 @@ const PersonalInfo = () => (
             <IntroductionText>
                 👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
             </IntroductionText>
-            <HireMeButton />
+            <Button buttonText={"Hire Me"} />
         </InfoContainer>
     </Wrapper>
 );
