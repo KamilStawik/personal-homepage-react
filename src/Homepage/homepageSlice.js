@@ -6,21 +6,31 @@ const homepageSlice = createSlice(
         name: 'homepage',
         initialState: {
             repositories: [],
-            darkTheme: getThemeFromLocalStorage(),
+            darkTheme: getThemeFromLocalStorage() || false,
+            applicationStatus: "loading",
         },
 
         reducers: {
             fetchRepositoriesFromApi: () => { },
-            setRepositories: ({ repositories }, { payload }) => {
-                repositories.push(payload);
+            setRepositories: ( state , { payload }) => {
+                state.repositories = payload;
             },
             toggleDarkTheme: state => {
                 state.darkTheme = !state.darkTheme;
-            }
+            },
+            setApplicationStatus: (state, { payload }) => {
+                state.applicationStatus = payload;
+            },
         },
     });
 
-export const { fetchRepositoriesFromApi, setRepositories, toggleDarkTheme } = homepageSlice.actions;
+export const {
+    fetchRepositoriesFromApi,
+    setRepositories,
+    toggleDarkTheme,
+    setApplicationStatus,
+} = homepageSlice.actions;
 export const selectRepositories = state => state.homepage.repositories;
 export const selectDarkTheme = state => state.homepage.darkTheme;
+export const selectApplicationStatus = state => state.homepage.applicationStatus;
 export default homepageSlice.reducer;

@@ -5,13 +5,14 @@ import SectionHeader from '../../common/SectionHeader/';
 import Tile from './Tile';
 import LoadingCircle from './LoadingCircle'
 import { Wrapper, Subtitle, TilesWrapper } from './styled.js';
-import { selectRepositories, fetchRepositoriesFromApi } from '../homepageSlice.js';
+import { selectRepositories, fetchRepositoriesFromApi, selectApplicationStatus } from '../homepageSlice.js';
 
 const Portfolio = () => {
 
     const dispatch = useDispatch();
-    const [repositories] = useSelector(selectRepositories);
-    console.log(repositories);
+    const repositories = useSelector(selectRepositories);
+    const applicationStatus = useSelector(selectApplicationStatus);
+    
     useEffect(() => dispatch(fetchRepositoriesFromApi()), []);
 
     return (
@@ -19,7 +20,7 @@ const Portfolio = () => {
             <GitHubIcon />
             <SectionHeader title={"Portfolio"} portfolio />
             <Subtitle>My recent projects</Subtitle>
-            {repositories ?
+            {applicationStatus === "success" &&
                 <TilesWrapper>
                     {repositories.map(repository => (
                         <Tile
@@ -32,9 +33,16 @@ const Portfolio = () => {
                     ))
                     }
                 </TilesWrapper>
-                :
+            }
+            {applicationStatus === "loading" &&
                 <>
                     <Subtitle loadingText>Please wait, projects are being loaded...</Subtitle>
+                    <LoadingCircle />
+                </>
+            }
+            {applicationStatus === "error" &&
+                <>
+                    <Subtitle loadingText>Uwaga ERROR</Subtitle>
                     <LoadingCircle />
                 </>
             }

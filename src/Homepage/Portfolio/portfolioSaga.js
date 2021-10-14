@@ -1,5 +1,5 @@
 import { takeEvery, call, put, delay } from 'redux-saga/effects';
-import { fetchRepositoriesFromApi, setRepositories } from './../homepageSlice';
+import { fetchRepositoriesFromApi, setRepositories, setApplicationStatus } from './../homepageSlice';
 import { getRepositoriesFromApi } from './getRepositoriesFromApi'
 
 const demoDelay = 2000;
@@ -9,8 +9,9 @@ function* fetchRepositoriesFromApiHandler() {
         const repositories = yield call(getRepositoriesFromApi);
         yield delay(demoDelay)
         yield put(setRepositories(repositories))
+        yield put(setApplicationStatus("success"))
     } catch (error) {
-        // add error handling
+        yield put(setApplicationStatus("error"))
     }
 }
 

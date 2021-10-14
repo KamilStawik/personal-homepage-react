@@ -3,7 +3,7 @@ export const getRepositoriesFromApi = async () => {
     const response = await fetch("https://api.github.com/users/KamilStawik/repos");
 
     if (!response.ok) {
-        new Error(response.statusText);
+        throw "Git connection error";
     }
 
     return await response.json();
