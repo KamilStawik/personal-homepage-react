@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	align-self: flex-start;
+	justify-self: flex-end;
 `;
 
 export const ThemeTogglerText = styled.span`
