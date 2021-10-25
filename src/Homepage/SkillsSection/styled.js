@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ReactComponent as Icone } from '../../images/listBullet.svg';
 
 export const ListBullet = styled(Icone)`
@@ -51,6 +51,10 @@ export const ListItemText = styled.span`
 	font-size: 18px;
 	letter-spacing: 0.05em;
 	color: ${({ theme }) => theme.colors.mainFont};
+
+	${({ important }) => important && css`
+		font-weight: bold;
+    `}
 
 	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
 		font-size: 14px;

@@ -9,7 +9,7 @@ const SkillsSection = ({ title, content }) => (
       {content.map(skill => (
         <ListItem key={skill.id}>
           <ListBullet />
-          <ListItemText>{skill.content}</ListItemText>
+          <ListItemText important={skill.important}>{skill.content}</ListItemText>
         </ListItem>
       ))}
     </UnorderedList>
