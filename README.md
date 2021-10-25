@@ -3,8 +3,8 @@
 ## Demo
 
 [Personal homepage by Kamil](https://kamilstawik.github.io/personal-homepage-react/)
-//add new screen!
-![Project screenshot1](/images/screen.jpg)
+
+![Project screenshot1](./images/screen.jpg)
 
 ## About me
 
