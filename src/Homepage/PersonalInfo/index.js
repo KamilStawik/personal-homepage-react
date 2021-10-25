@@ -2,6 +2,7 @@ import { Wrapper, Photo, Header, IntroductionText, InfoContainer } from './style
 import TopText from './../../common/TopText'
 import ThemeToggler from './ThemeToggler';
 import Button from './../../common/Button';
+import personalInfoText from '../content/personalInfoText';
 
 const PersonalInfo = () => (
     <Wrapper>
@@ -10,9 +11,7 @@ const PersonalInfo = () => (
         <InfoContainer>
             <TopText>this is</TopText>
             <Header>Kamil Stawik</Header>
-            <IntroductionText>
-                👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
-            </IntroductionText>
+            <IntroductionText>{personalInfoText}</IntroductionText>
             <Button buttonText={"Hire Me"} />
         </InfoContainer>
     </Wrapper>
