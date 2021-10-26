@@ -4,7 +4,7 @@
 
 [Personal homepage by Kamil](https://kamilstawik.github.io/personal-homepage-react/)
 
-![Project screenshot1](./images/screen.jpg)
+![Project screenshot1](/src/images/screen.jpg)
 
 ## About me
 
