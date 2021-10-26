@@ -15,6 +15,7 @@ export const ListBullet = styled(Icone)`
 export const Wrapper = styled.section`
 	padding: 32px;
 	margin: 66px auto;
+	background-color: ${({ theme }) => theme.colors.tileBackground};
 	box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.04), 0px 16px 58px rgba(9, 10, 51, 0.06);
 	border-radius: 4px;
 
