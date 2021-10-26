@@ -5,7 +5,6 @@ import GitHubIcon from '../../common/GitHubIcon';
 import { mailAddress, gitHubAddress } from './../content/links.js'
 
 const Footer = () => (
-
     <Wrapper>
         <TopText>let's talk!</TopText>
         <StyledMail href={`mailto:${mailAddress}`}>{mailAddress}</StyledMail>

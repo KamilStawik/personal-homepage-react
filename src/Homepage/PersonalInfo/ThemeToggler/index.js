@@ -5,7 +5,6 @@ import { ReactComponent as DarkModeOn } from './../../../images/darkModeOn.svg';
 import { StyledButton, ThemeTogglerText } from './styled';
 
 const ThemeToggler = () => {
-
     const dispatch = useDispatch();
     const darkTheme = useSelector(selectDarkTheme);
 
@@ -16,4 +15,5 @@ const ThemeToggler = () => {
         </StyledButton >
     );
 }
+
 export default ThemeToggler;

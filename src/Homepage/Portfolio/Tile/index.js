@@ -1,7 +1,6 @@
 import { Description, Link, StyledTile, TileHeader, } from './styled';
 
 const Tile = ({ title, repositoryAdress, demoAdress, description }) => (
-
     <StyledTile>
         <TileHeader>{title}</TileHeader>
         <Description>{description}</Description>

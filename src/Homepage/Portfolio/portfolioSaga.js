@@ -2,7 +2,7 @@ import { takeEvery, call, put, delay } from 'redux-saga/effects';
 import { fetchRepositoriesFromApi, setRepositories, setApplicationStatus } from './../homepageSlice';
 import { getRepositoriesFromApi } from './getRepositoriesFromApi'
 
-const demoDelay = 2000;
+const demoDelay = 1000;
 
 function* fetchRepositoriesFromApiHandler() {
     try {

@@ -2,7 +2,6 @@ import { ListItem, ListItemText, ListBullet, UnorderedList, Wrapper } from './st
 import SectionHeader from '../../common/SectionHeader';
 
 const SkillsSection = ({ title, content }) => (
-
   <Wrapper>
     <SectionHeader title={title} />
     <UnorderedList>
@@ -14,7 +13,6 @@ const SkillsSection = ({ title, content }) => (
       ))}
     </UnorderedList>
   </Wrapper>
-
 );
 
 export default SkillsSection;

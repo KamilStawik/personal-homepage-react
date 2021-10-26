@@ -33,8 +33,7 @@ const Portfolio = () => {
                             demoAdress={`https://kamilstawik.github.io/${repository.name}/`}
                             description={repository.description}
                         />
-                    ))
-                    }
+                    ))}
                 </TilesWrapper>
             }
             {applicationStatus === "loading" &&
