@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as LinkedIn } from './../../images/linkedIn.svg';
 
 export const Wrapper = styled.div`
     margin-top: 120px;
@@ -56,5 +57,24 @@ export const SocialMediaWrapper = styled.div`
     }
 `;
 
-export const GitHubLink = styled.a`
+export const SocialMediaLink = styled.a`
+    margin-right: 24px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
+        margin-right: 16px;
+    }
+`;
+
+export const LinkedInIcon = styled(LinkedIn)`
+    fill: ${({ theme }) => theme.colors.secondFont};
+    
+    &:hover{
+        transition: 0.3s linear;
+        fill: ${({ theme }) => theme.colors.mainBlue};
+    }
+    
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
+        width: 32px;
+        height: auto; 
+    }
 `;

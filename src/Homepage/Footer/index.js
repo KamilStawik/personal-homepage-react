@@ -1,21 +1,23 @@
 import TopText from '../../common/TopText';
-import { EncouragingText, GitHubLink, SocialMediaWrapper, StyledMail, Wrapper } from './styled';
+import { EncouragingText, SocialMediaLink, LinkedInIcon, SocialMediaWrapper, StyledMail, Wrapper } from './styled';
 import encouragingText from './../content/encouragingText';
 import GitHubIcon from '../../common/GitHubIcon';
-import { mailAddress, gitHubAddress } from './../content/links.js'
+import { mailAddress, gitHubAddress, linkInAddress } from './../content/links.js'
 
 const Footer = () => (
     <Wrapper>
         <TopText>let's talk!</TopText>
-        <StyledMail href={`mailto:${mailAddress}`}>{mailAddress}</StyledMail>
+        <StyledMail href={`mailto:${mailAddress}`} title={mailAddress} target="_blank" rel="noreferrer">{mailAddress}</StyledMail>
         <EncouragingText>{encouragingText}</EncouragingText>
-        <SocialMediaWrapper href={gitHubAddress}>
-            <GitHubLink href={gitHubAddress}>
+        <SocialMediaWrapper>
+            <SocialMediaLink href={gitHubAddress} title="gitHub" target="_blank" rel="noreferrer">
                 <GitHubIcon socialMedia />
-            </GitHubLink>
+            </SocialMediaLink>
+            <SocialMediaLink href={linkInAddress} title="linkedIn" target="_blank" rel="noreferrer">
+                <LinkedInIcon />
+            </SocialMediaLink>
         </SocialMediaWrapper>
     </Wrapper>
 );
 
 export default Footer;
-
