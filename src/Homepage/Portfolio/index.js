@@ -26,6 +26,7 @@ const Portfolio = () => {
             {applicationStatus === "success" &&
                 <TilesWrapper>
                     {repositories.map(repository => (
+                        repository.name !== "KamilStawik" &&
                         <Tile
                             key={repository.id}
                             title={repository.name}
