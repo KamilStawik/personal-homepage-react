@@ -2,7 +2,7 @@ import TopText from '../../common/TopText';
 import { EncouragingText, SocialMediaLink, LinkedInIcon, SocialMediaWrapper, StyledMail, Wrapper } from './styled';
 import encouragingText from './../content/encouragingText';
 import GitHubIcon from '../../common/GitHubIcon';
-import { mailAddress, gitHubAddress, linkInAddress } from './../content/links.js'
+import { mailAddress, gitHubAddress, linkedInAddress } from './../content/links.js'
 
 const Footer = () => (
     <Wrapper>
@@ -13,7 +13,7 @@ const Footer = () => (
             <SocialMediaLink href={gitHubAddress} title="gitHub" target="_blank" rel="noreferrer">
                 <GitHubIcon socialMedia />
             </SocialMediaLink>
-            <SocialMediaLink href={linkInAddress} title="linkedIn" target="_blank" rel="noreferrer">
+            <SocialMediaLink href={linkedInAddress} title="linkedIn" target="_blank" rel="noreferrer">
                 <LinkedInIcon />
             </SocialMediaLink>
         </SocialMediaWrapper>
