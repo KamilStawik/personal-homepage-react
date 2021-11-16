@@ -9,7 +9,7 @@ const Button = ({ buttonText, gitButton }) => (
         rel="noreferrer"
         gitButton={gitButton}
     >
-        <MessageIcon gitButton={gitButton} />
+        <MessageIcon $gitButton={gitButton} />
         <ButtonText gitButton={gitButton} >{buttonText}</ButtonText>
     </StyledButton >
 );

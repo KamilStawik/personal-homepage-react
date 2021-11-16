@@ -11,7 +11,7 @@ const Footer = () => (
         <EncouragingText>{encouragingText}</EncouragingText>
         <SocialMediaWrapper>
             <SocialMediaLink href={gitHubAddress} title="gitHub" target="_blank" rel="noreferrer">
-                <GitHubIcon socialMedia />
+                <GitHubIcon $socialMedia />
             </SocialMediaLink>
             <SocialMediaLink href={linkedInAddress} title="linkedIn" target="_blank" rel="noreferrer">
                 <LinkedInIcon />

@@ -6,7 +6,7 @@ const GitHubIcon = styled(GitHub)`
     width: 40px;
     height: 40px;
 
-    ${({ socialMedia }) => socialMedia && css`
+    ${({ $socialMedia }) => $socialMedia && css`
         margin: 0px;
         width: 48px;
         height: 48px;

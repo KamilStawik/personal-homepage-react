@@ -5,7 +5,7 @@ export const MessageIcon = styled(Message)`
         width: 24px;
         height: 25px;
 
-        ${({ gitButton }) => gitButton && css`
+        ${({ $gitButton }) => $gitButton && css`
             display: none;
         `}
 
