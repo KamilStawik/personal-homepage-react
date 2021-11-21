@@ -12,8 +12,9 @@ const homepageSlice = createSlice(
 
         reducers: {
             fetchRepositoriesFromApi: () => { },
-            setRepositories: ( state , { payload }) => {
+            setRepositories: (state, { payload }) => {
                 state.repositories = payload;
+                state.repositories.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
             },
             toggleDarkTheme: state => {
                 state.darkTheme = !state.darkTheme;
