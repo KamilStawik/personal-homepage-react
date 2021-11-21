@@ -14,9 +14,9 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const StyledMail = styled.a`
+export const StyledLink = styled.a`
     font-weight: 900;
-    margin: 24px 0px;
+    margin-top: 24px;
     font-size: 32px;
     line-height: 39px;
     letter-spacing: 0.05em;
@@ -37,7 +37,7 @@ export const StyledMail = styled.a`
 `;
 
 export const EncouragingText = styled.p`
-    margin: 0px;
+    margin: 24px 0px 0px 0px;
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.05em;
