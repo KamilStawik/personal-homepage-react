@@ -36,11 +36,11 @@ export const Description = styled.span`
     line-height: 1.4;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.colors.mainFont};
-    margin: 24px 0px;
+    margin: 18px 0px;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         font-size: 14px;
-        margin: 16px 0px;
+        margin: 12px 0px;
     }
 `;
 

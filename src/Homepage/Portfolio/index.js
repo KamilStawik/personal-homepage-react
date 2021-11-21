@@ -29,6 +29,7 @@ const Portfolio = () => {
                         repository.name !== "KamilStawik" &&
                         <Tile
                             key={repository.id}
+                            createdDate={repository.created_at}
                             title={repository.name}
                             repositoryAdress={repository.html_url}
                             demoAdress={`https://kamilstawik.github.io/${repository.name}/`}
