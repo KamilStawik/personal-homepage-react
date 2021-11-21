@@ -27,7 +27,7 @@ export const StyledLink = styled.a`
     @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         font-size: 18px;
         line-height: 22px;
-        margin: 12px 0px;
+        margin-top: 12px;
     }
 
     &:hover {
@@ -45,6 +45,7 @@ export const EncouragingText = styled.p`
 
     @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
         font-size: 14px;
+        margin: 12px 0px 0px 0px;
     }
 `;
 
