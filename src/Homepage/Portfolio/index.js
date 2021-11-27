@@ -14,6 +14,7 @@ const Portfolio = () => {
     const dispatch = useDispatch();
     const repositories = useSelector(selectRepositories);
     const applicationStatus = useSelector(selectApplicationStatus);
+    const porfolioRepositories =["minesweeper", "personal-homepage-react", "movie-browser", "todo-list-react"];
 
     // eslint-disable-next-line
     useEffect(() => dispatch(fetchRepositoriesFromApi()), []);
@@ -26,7 +27,7 @@ const Portfolio = () => {
             {applicationStatus === "success" &&
                 <TilesWrapper>
                     {repositories.map(repository => (
-                        repository.name !== "KamilStawik" &&
+                        porfolioRepositories.includes(repository.name) &&
                         <Tile
                             key={repository.id}
                             createdDate={repository.created_at}
