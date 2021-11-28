@@ -8,13 +8,17 @@ const LastCommitTimer = () => {
     const repositories = useSelector(selectRepositories);
     const applicationStatus = useSelector(selectApplicationStatus);
 
-    let { days, hours, minutes, seconds } = getTime(repositories, applicationStatus);
+    const timePeriods = getTime(repositories, applicationStatus);
+    const days = timePeriods.find(timePeriod => timePeriod.name === "day");
+    const hours = timePeriods.find(timePeriod => timePeriod.name === "hour");
+    const minutes = timePeriods.find(timePeriod => timePeriod.name === "minute");
+    const seconds = timePeriods.find(timePeriod => timePeriod.name === "second");
 
     return (
         <div>
             <GitHubIcon />
             mój timer
-            {applicationStatus === "success" && `dni: ${days}, godzin: ${hours}, minut: ${minutes}, sekund: ${seconds}`}
+            {applicationStatus === "success" && `dni: ${days.value}, godzin: ${hours.value}, minut: ${minutes.value}, sekund: ${seconds.value}`}
         </div>
     );
 };

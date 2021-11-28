@@ -9,7 +9,6 @@ function* fetchRepositoriesFromApiHandler() {
         const repositories = yield call(getRepositoriesFromApi);
         yield delay(demoDelay)
         yield put(setRepositories(repositories))
-        //yield call(console.log(repositories))
         yield put(setApplicationStatus("success"))
     } catch (error) {
         yield put(setApplicationStatus("error"))
