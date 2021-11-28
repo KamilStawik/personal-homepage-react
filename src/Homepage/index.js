@@ -12,8 +12,8 @@ const Homepage = () => (
         <PersonalInfo />
         <SkillsSection title={"My skillset includes"} content={skillSetContent} />
         <SkillsSection title={"What I want to learn next"} content={futureSkillsContent} />
-        <LastCommitTimer />
         <Portfolio />
+        <LastCommitTimer />
         <Footer />
     </Container>
 );
