@@ -23,6 +23,6 @@ export const TimerText = styled.span`
     color: ${({ theme }) => theme.colors.secondFont};
     
     @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
-        font-size: 18px;
+        font-size: 16px;
     }
 `;

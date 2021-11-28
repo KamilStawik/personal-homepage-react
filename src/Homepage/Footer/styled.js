@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { ReactComponent as LinkedIn } from './../../images/linkedIn.svg';
 
 export const Wrapper = styled.div`
-    margin-top: 120px;
+    margin-top: 80px;
     width: 62%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
-        margin-top: 48px;
+        margin-top: 30px;
         width: 100%;
     }
 `;
