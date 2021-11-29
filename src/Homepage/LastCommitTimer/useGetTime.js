@@ -62,6 +62,7 @@ const useGetTime = () => {
         return () => {
             clearInterval(intervalId);
         };
+            // eslint-disable-next-line
     }, [applicationStatus]);
 
     return { days, hours, minutes, seconds };

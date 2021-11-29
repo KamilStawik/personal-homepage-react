@@ -29,10 +29,16 @@ export const UnorderedList = styled.ul`
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@media (max-width: 1240px) {
+		grid-template-columns: 1fr 1fr;
+		padding-left: 0px;
+    }
 	
 	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
+		grid-template-columns: 1fr;
 		padding-left: 0px;
     }
 `;
@@ -40,11 +46,6 @@ export const UnorderedList = styled.ul`
 export const ListItem = styled.li`
 	line-height: 1.4;
 	margin: 4px 0px;
-	flex-basis: 33%;
-
-	@media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
-		flex-basis: 100%;
-    }
 `;
 
 export const ListItemText = styled.span`
