@@ -22,3 +22,18 @@ export const FutureSkillsText = styled.span`
         font-size: 16px;
     }
 `;
+
+export const TechnologyText = styled.span`
+    display: inline-block;
+    padding: 5px;
+    background-color: ${({ theme }) => theme.colors.codeBackground};
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: monospace;
+    color: ${({ theme }) => theme.colors.mainBlue};
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.mobileMax}px) {
+        padding: 2px;
+        border-radius: 4px;
+    }
+`;

@@ -9,6 +9,7 @@ export const lightTheme = {
         tileBorder: "rgba(209, 213, 218, 0.3)",
         tileBorderOnHover: "rgba(3, 102, 214, 0.2)",
         white: "#FFFFFF",
+        codeBackground: "#aaaaaa",
     },
 
     breakPoints: {
@@ -27,6 +28,7 @@ export const darkTheme = {
         tileBorder: "rgba(209, 213, 218, 0.1)",
         tileBorderOnHover: "rgba(3, 102, 214, 0.5)",
         white: "#FFFFFF",
+        codeBackground: "#363636",
     },
 
     breakPoints: {

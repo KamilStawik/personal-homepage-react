@@ -1,9 +1,9 @@
-import { FutureSkillsText, Wrapper } from './styled';
+import { Wrapper, FutureSkillsText, TechnologyText } from './styled';
 
 const FutureSkills = () => (
     <Wrapper>
         <FutureSkillsText>
-            Currently exploring TypeScript for static typing and less buggy code.
+            Currently exploring <TechnologyText>TypeScript</TechnologyText> for static typing and less buggy code.
         </FutureSkillsText>
     </Wrapper>
 );
